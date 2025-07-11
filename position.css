@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* When The parent is body */
+#Parent {
+  height: 50%;
+  width: 50%;
+  background-color: rgb(182, 182, 182);
+  border-radius: 20px;
+}
+
+.child-Absolute {
+  height: 40%;
+  width: 40%;
+  background-color: aquamarine;
+  border-radius: 20px;
+  position: absolute; /* Changes position in respect to parent's position i.e in this case the parent is the body.*/
+  left: 30%; /* gets 40% from left => moves to right*/
+  top: 50%; /* gets 10% from top => move downwards*/
+}
+
+/* When Parent div is the parent by giving it position relative */
+#Parent {
+  height: 50%;
+  width: 50%;
+  background-color: rgb(182, 182, 182);
+  border-radius: 20px;
+  position: relative;
+}
+.child-Absolute {
+  height: 40%;
+  width: 40%;
+  background-color: aquamarine;
+  border-radius: 20px;
+  position: absolute; /* Changes position in respect to parent's position i.e in this case the parent is the body.*/
+  left: 30%; /* gets 40% from left => moves to right*/
+  top: 50%; /* gets 10% from top => move downwards*/
+}
+.child-Absolute h5 {
+  text-align: center;
+}
+.child-Relative {
+  height: 40%;
+  width: 40%;
+  background-color: burlywood;
+  border-radius: 20px;
+  position: relative; /* Changes position in respect to original place*/
+  left: 40%; /* gets 40% from left => moves to right*/
+  top: 10%; /* gets 10% from top => move downwards*/
+}
+.child-Relative h5 {
+  text-align: center;
+}
