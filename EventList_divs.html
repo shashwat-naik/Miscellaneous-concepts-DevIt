@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listner on Divs</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      #container {
+        height: 90%;
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 80%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+      }
+      .one {
+        background-color: #584053;
+      }
+      .two {
+        background-color: #8dc6bf;
+      }
+      .three {
+        background-color: #fcbc66;
+      }
+      .four {
+        background-color: #f97b4f;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="box one" data-name="greatgrandparent">
+        <div class="box two" data-name="grandparent">
+          <div class="box three" data-name="parent">
+            <div class="box four" data-name="child">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let structure = document.getElementById("container");
+      structure.addEventListener("click", function (event) {
+        if (event.target.dataset.name) {
+        //   alert(`${event.target.dataset.name} called`);
+          console.log(`${event.target.dataset.name} called`);
+        }
+      });
+    </script>
+  </body>
+</html>
