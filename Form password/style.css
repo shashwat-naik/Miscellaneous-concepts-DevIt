@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Lexend", sans-serif;
+  background-color: #d8dadc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.template {
+  height: 90%;
+  width: 60%;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Left section - form */
+.form-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form-section input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 16px;
+}
+.form-section ul {
+  list-style-type: none;
+}
+.logo {
+  font-family: "Bitcount Grid Single", system-ui;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.greet {
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.rules {
+  padding-left: 10px;
+}
+.rules li {
+  font-weight: 300;
+  font-size: 11px;
+  transition: color 0.3s ease;
+}
+form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #182a40;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0f1e30;
+}
+form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Right section - image */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.valid {
+   color: #28a745;
+}
+
+.invalid {
+  color: #c0c0c0;
+}
+
+.placeholder-img {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 14px;
+  border-radius: 10px;
+}

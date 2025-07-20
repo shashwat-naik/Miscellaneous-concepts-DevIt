@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="template">
+      <div class="form-section">
+        <h1 class="logo">GetIt</h1>
+        <form id="signupForm">
+        <h1 class="greet">Hi there</h1>
+        <label for="username">UserName</label>
+        <input type="text" id="username" placeholder="UserName" required/>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required/>
+        <div class="rules">
+          <ul>
+            <li id="character" class="invalid">At least 8 characters long</li>
+            <li id="special" class="invalid">Contains special character</li>
+            <li id="digit" class="invalid">Contains number</li>
+          </ul>
+        </div>
+        <button type="submit" id="submitBtn" disabled>Submit</button>
+      </form>
+      </div>
+      <div class="image-section">
+        <img src="./img.jpg" alt="form visual" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
